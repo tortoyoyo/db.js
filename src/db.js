@@ -227,7 +227,7 @@
                 store = transaction.objectStore( table ),
                 deferred = Deferred();
             
-            var req = store.delete( key );
+            var req = store["delete"]( key );
             transaction.oncomplete = function ( ) {
                 deferred.resolve( key );
             };
@@ -373,7 +373,7 @@
                                 cursor.update(result);
                             }
                         }
-                        cursor.continue();
+                        cursor["continue"]();
                     }
                 }
             };
