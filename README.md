@@ -1,7 +1,11 @@
 [![Build Status](https://travis-ci.org/aaronpowell/db.js.png?branch=master)](https://travis-ci.org/aaronpowell/db.js)[![Selenium Test Status](https://saucelabs.com/buildstatus/aaronpowell)](https://saucelabs.com/u/aaronpowell)
 
-db.js
+db.js for Mobile
 =====
+
+Changes made to adapt to smartphones. 
+
+Tests: Android 2.3, FirefoxOS, Windows Phone 8
 
 db.js is a wrapper for [IndexedDB](http://www.w3.org/TR/IndexedDB/) to make it easier to work against, making it look more like a queryable API.
 
