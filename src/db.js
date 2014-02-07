@@ -1,4 +1,11 @@
 (function ( window , undefined ) {
+    
+    if(!window.indexedDB){
+		window.indexedDB = window.shimIndexedDB;
+	}
+	
+	window.shimIndexedDB.__debug(true) && window.shimIndexedDB.__useShim();
+    
     'use strict';
     var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.oIndexedDB || window.msIndexedDB,
         IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange,
