@@ -3,7 +3,9 @@
 db.js for Mobile
 =====
 
-Changes made to adapt to smartphones. 
+Adaptation Smartphone.
+
+Android does not have IndexexDB being required to enter the Polfilly - IndexedDBShim.min.js 
 
 Tests: Android 2.3, FirefoxOS, Windows Phone 8
 
