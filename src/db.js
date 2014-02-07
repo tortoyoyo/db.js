@@ -342,6 +342,15 @@
 
             index[cursorType].apply( index , indexArgs ).onsuccess = function ( e ) {
                 var cursor = e.target.result;
+                
+                // add ID automatic, not dynamic
+                // need to better study this lib
+                if(cursor != undefined){
+                	if(cursor.value.id === undefined){
+                	cursor.value.id = cursor.key;
+                	}
+                }
+                
                 if ( typeof cursor === typeof 0 ) {
                     results = cursor;
                 } else if ( cursor ) {
